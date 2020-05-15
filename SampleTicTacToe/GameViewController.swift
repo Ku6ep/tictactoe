@@ -57,14 +57,14 @@ class GameViewController: BaseViewController {
     }
     
     private func setupImages() {
-        if let tmpXimage = UIImage(contentsOfFile: getDocumentsDirectory().appendingPathComponent("file0.png").path)?.withRenderingMode(.alwaysOriginal) {
+        if let tmpXimage = UIImage(contentsOfFile: getDocumentsDirectory().appendingPathComponent("file0.png").path)?.withRenderingMode(.alwaysTemplate) {
             xImage = tmpXimage
         }
         else {
             xImage = UIImage(named: "x_mark")?.withRenderingMode(.alwaysTemplate)
         }
         
-        if let tmpOimage = UIImage(contentsOfFile: getDocumentsDirectory().appendingPathComponent("file1.png").path)?.withRenderingMode(.alwaysOriginal) {
+        if let tmpOimage = UIImage(contentsOfFile: getDocumentsDirectory().appendingPathComponent("file1.png").path)?.withRenderingMode(.alwaysTemplate) {
             oImage = tmpOimage
         }
         else {
